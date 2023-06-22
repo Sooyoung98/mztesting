@@ -12,4 +12,4 @@ jobs:
     steps:
     - name: HTTP Request Action
       run: |
-        curl 'http://52.221.113.44/items/5\?q\=helll'
+        curl -X GET "http://52.221.113.44/items/5\?q\=helll"
