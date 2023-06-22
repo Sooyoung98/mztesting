@@ -13,9 +13,6 @@ jobs:
     - name: HTTP Request Action
       uses: fjogeleit/http-request-action@v1.14.0
       with:
-        url: 'http://52.221.113.44/build-arm'
+        url: 'http://52.221.113.44/items/5\?q\=helll'
         method: 'POST'
         customHeaders: '{"Content-Type": "application/json"}'
-        data: '{"docker_repository": "soo0123/testx", "git_repository": "mztesting", "image_name": "soo0123/testx:v1", "git_tag": "actiontesting"}'
-          
-          
