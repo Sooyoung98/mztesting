@@ -10,6 +10,10 @@ jobs:
   deployment:
     runs-on: ubuntu-latest
     steps:
-    - name: HTTP Request Action
-      run: |
-        curl "http://52.221.113.44/"
+    - name: Build ARM64 Docker Image
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: 'http://52.221.113.44/build-arm'
+        method: 'POST'
+        customHeaders: '{"Content-Type": "application/json"}'
+        data: '{"docker_repository": "soo0123/testx", "git_repository": "mztesting", "image_name": "soo0123/testx:v1", "git_tag": "actiontesting"}'
