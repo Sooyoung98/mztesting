@@ -12,5 +12,7 @@ jobs:
     steps:
     - name: Build ARM64 Docker Image
       run: |
-          curl -X POST http://52.221.113.44/build-arm -H 'Content-type: application/json' \
+          curl -X POST http://52.221.113.44/build-arm \
+          -H 'Content-type: application/json' \
+          -H 'Authorization: ${{secrets.BUILD_ARM_TOKEN}}' \
           -d '{"docker_repository": "soo0123/testx","git_repository": "mztesting","image_name": "soo0123/testx:v1","git_tag":"actiontesting6"}'
