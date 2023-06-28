@@ -15,4 +15,4 @@ jobs:
           curl -X POST http://52.221.113.44:8080/build-arm \
           -H 'Content-type: application/json' \
           -H 'Authorization: ${{secrets.BUILD_ARM_TOKEN}}' \
-          -d '{"docker_repository": "soo0123/testx","git_repository": "mztesting","image_name": "soo0123/testx:v1","git_tag":"actiontesting6"}'
+          -d '{"docker_repository": "soo0123/testx","git_repository": "mztesting","image_name": "soo0123/testx:actiontesting6","git_tag":"actiontesting6"}'
