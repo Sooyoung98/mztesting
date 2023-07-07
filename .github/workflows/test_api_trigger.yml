@@ -33,7 +33,7 @@ jobs:
             
             # Body request
             # Apply only to POST|PUT request
-            body: '{ "docker_repository": "soo0123/mzarm","git_repository": "core-core1","image_name": "soo0123/mzarm:c1","git_tag": "c1" }'
+            body: '{ "docker_repository": "soo0123/mzarm","git_repository": "core-core10","image_name": "soo0123/mzarm:c1","git_tag": "c1" }'
 
             # Request timeout (millisec)
             # Default: 1000
