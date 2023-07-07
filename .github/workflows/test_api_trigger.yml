@@ -37,7 +37,10 @@ jobs:
 
             # Request timeout (millisec)
             # Default: 1000
-            timeout: 1000000
+            timeout: 100000000000
+            
+            log-response: true
+            
         - name: Report Status
           if: always()
           uses: ravsamhq/notify-slack-action@master
